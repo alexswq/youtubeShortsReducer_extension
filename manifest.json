@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Youtube Shorts Remover",
+	"version": "0.1",
+	"description": "Reduce the time consumption of the time vampire known as youtube shorts. Tiktok is digital cancer and it should not spread.",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.youtube.com/",
+				"https://www.youtube.com/*"
+			],
+			"run_at": "document_end",
+			"js": [
+				"content-script.js"
+			]
+		}
+	],
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"contentSettings"
+	]
+}
