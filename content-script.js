@@ -1,12 +1,7 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
 	const retry = setInterval(() => {
-		let shortsLinkMobile = document.getElementsByTagName(
-			"ytd-mini-guide-entry-renderer"
-		)[2];
-		let shortsLinkDesktop = document.getElementsByTagName(
-			"ytd-guide-entry-renderer"
-		)[2];
-
+		let shortsLinkMobile = document.getElementsByTagName("ytd-mini-guide-entry-renderer")[1];
+		let shortsLinkDesktop = document.getElementsByTagName("ytd-guide-entry-renderer")[1];
 		if (shortsLinkMobile !== undefined || shortsLinkDesktop !== undefined) {
 			shortsLinkDesktop?.remove();
 			shortsLinkMobile?.remove();
@@ -34,3 +29,9 @@ function redirect() {
 		return;
 	}
 }
+
+setInterval(() => {
+	if (window.location.pathname.includes("/shorts")) {
+		redirect();
+	}
+}, 60000);
