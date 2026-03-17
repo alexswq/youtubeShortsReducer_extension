@@ -8,6 +8,14 @@ window.addEventListener("load", () => {
 			clearInterval(retry);
 		}
 	}, 10);
+
+	setInterval(() => {
+		if (document.getElementById("related")){
+			document.getElementById("related").remove()
+		}	
+	}, 10);
+	
+		
 });
 
 window.addEventListener("click", redirect);
