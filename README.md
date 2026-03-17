@@ -8,6 +8,9 @@ It will delete the link to `Shorts` from youtube and will prevent you from scrol
 
 It WILL permit you to enjoy a shorts video if you click on it from your recommended vids. This is not a `kill all shorts` extension. It is just here to prevent the mindless scrolling that you can get sucked into.
 
+It will also remove the recommended vids on the right of the screen when you watch a video. This is because I found this too to be too much of a time-vampire 
+
+
 ## How to use
 
 It is not on google extensions store yet but I'll try to get it on there
